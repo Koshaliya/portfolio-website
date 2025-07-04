@@ -5,6 +5,10 @@ import {
   Code,
   User,
 } from "lucide-react";
+import azendLogo from "../assets/Azend.png";
+import arimacLogo from "../assets/arimac.png";
+import profilePic from "../assets/profile.jpeg";
+
 export const ExperienceSection = () => {
   return (
     <section id="experience" className="py-24 px-4 relative">
@@ -19,7 +23,7 @@ export const ExperienceSection = () => {
             {/* Profile Image */}
             <div className="flex justify-center rounded-lg overflow-hidden ">
               <img
-                src="src\assets\profile.jpeg"
+                src={profilePic}
                 alt="Koshaliya - Software Engineer"
                 className="w-50 h-auto object-cover item-center"
                 style={{ borderRadius: "50%" }}
@@ -57,7 +61,7 @@ export const ExperienceSection = () => {
                   <BriefcaseBusiness className="h-6 w-6 text-primary" />
                 </div> */}
                 <img
-                  src="/src/assets/Azend.png"
+                  src={azendLogo}
                   alt="Azend Technologies Logo"
                   className="h-12 w-12 rounded-full object-cover border border-gray-200"
                 />
@@ -79,8 +83,8 @@ export const ExperienceSection = () => {
                   <BriefcaseBusiness className="h-6 w-6 text-primary" />
                 </div> */}
                 <img
-                  src="/src/assets/arimac.png"
-                  alt="Azend Technologies Logo"
+                  src={arimacLogo}
+                  alt="Arimac Logo"
                   className="h-12 w-12 rounded-full object-cover border border-gray-200"
                 />
                 <div className="text-left">
