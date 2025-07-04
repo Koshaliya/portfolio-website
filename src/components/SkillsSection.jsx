@@ -3,35 +3,115 @@ import { cn } from "../lib/utils";
 
 const skills = [
   //Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "Angualr", level: 95, category: "frontend" },
-  { name: "React", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 95, category: "frontend" },
-  { name: "Bootstrap", level: 95, category: "frontend" },
-  { name: "Flutter", level: 95, category: "frontend" },
-  { name: "ReactNative", level: 95, category: "frontend" },
+  {
+    name: "HTML5/CSS3",
+    level: 95,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg ",
+    category: "frontend",
+  },
+  {
+    name: "Angular JS",
+    level: 90,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg ",
+    category: "frontend",
+  },
+  {
+    name: "React JS",
+    level: 75,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg ",
+    category: "frontend",
+  },
+  {
+    name: "JavaScript",
+    level: 80,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg ",
+    category: "frontend",
+  },
+  {
+    name: "Bootstrap",
+    level: 95,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg ",
+    category: "frontend",
+  },
+  {
+    name: "Flutter",
+    level: 60,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg ",
+    category: "frontend",
+  },
+  // {
+  //   name: "ReactNative",
+  //   level: 56,
+  //   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg ",
+  //   category: "frontend",
+  // },
 
   //Backend
-  { name: ".NET ", level: 95, category: "backend" },
-  { name: "Java ", level: 95, category: "backend" },
-  { name: "Python ", level: 95, category: "backend" },
-  { name: "Node,js ", level: 95, category: "backend" },
-  { name: "MS SQL ", level: 95, category: "backend" },
-  { name: "PostgreSQL ", level: 95, category: "backend" },
-  { name: "MySQL ", level: 95, category: "backend" },
-  { name: "MongoDB ", level: 95, category: "backend" },
+  {
+    name: ".NET ",
+    level: 85,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg ",
+    category: "backend",
+  },
+  {
+    name: "Java ",
+    level: 65,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg ",
+    category: "backend",
+  },
+  {
+    name: "Python ",
+    level: 78,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg ",
+    category: "backend",
+  },
+  {
+    name: "Node.js ",
+    level: 65,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg ",
+    category: "backend",
+  },
+  {
+    name: "R ",
+    level: 78,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg ",
+    category: "backend",
+  },
+  {
+    name: "MySQL ",
+    level: 87,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg ",
+    category: "backend",
+  },
+  {
+    name: "PostgreSQL ",
+    level: 87,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg ",
+    category: "backend",
+  },
+  {
+    name: "MS SQL ",
+    level: 83,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg ",
+    category: "backend",
+  },
+  {
+    name: "MongoDB ",
+    level: 81,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg ",
+    category: "backend",
+  },
 
   //Tools
-  { name: "Git ", level: 95, category: "tools" },
-  { name: "Figma ", level: 95, category: "tools" },
-  { name: "Git ", level: 95, category: "tools" },
+  // { name: "Git ", level: 91, category: "tools" },
+  // { name: "Excel ", level: 84, category: "tools" },
 
   //Data Analysis
 
   //
 ];
 
-const categories = ["all", "frontend", "backend", "data analysis", "tools"];
+const categories = ["all", "frontend", "backend"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -43,7 +123,7 @@ export const SkillsSection = () => {
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary">Skills</span>
+          Technical <span className="text-primary">Skills</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -63,25 +143,30 @@ export const SkillsSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
+              className="bg-card p-4 rounded-lg shadow-xs card-hover flex flex-col items-center justify-center text-center"
             >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg">{skill.name}</h3>
-              </div>
+              {/* <div className="text-center mb-4"> */}
+              <img
+                src={skill.logo}
+                alt={`${skill.name} logo`}
+                className="w-12 h-12 object-contain mb-4"
+              />
+              <h3 className="font-semibold text-lg">{skill.name}</h3>
+              {/* </div> */}
               <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
+                {/* <div
                   className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease_out"
                   style={{ width: skill.level + "%" }}
-                ></div>
+                ></div> */}
               </div>
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
+              <div className="text-center mt-1">
+                {/* <span className="text-sm text-muted-foreground">
                   {skill.level}%
-                </span>
+                </span> */}
               </div>
             </div>
           ))}

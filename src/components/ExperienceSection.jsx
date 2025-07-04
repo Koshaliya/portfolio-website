@@ -1,13 +1,31 @@
-import { BrainCircuit, ChartSpline, Code, User } from "lucide-react";
-export const AboutSection = () => {
+import {
+  BrainCircuit,
+  BriefcaseBusiness,
+  ChartSpline,
+  Code,
+  User,
+} from "lucide-react";
+export const ExperienceSection = () => {
   return (
-    <section id="about" className="py-24 px-4 relative">
+    <section id="experience" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-primary">Me</span>
+          Work <span className="text-primary">Experience</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
+            {/* Image & Skills Section */}
+
+            {/* Profile Image */}
+            <div className="flex justify-center rounded-lg overflow-hidden ">
+              <img
+                src="src\assets\profile.jpeg"
+                alt="Koshaliya - Software Engineer"
+                className="w-50 h-auto object-cover item-center"
+                style={{ borderRadius: "50%" }}
+              />
+            </div>
+
             <h3 className="text-2xl font-semibold">
               Software Engineer | Data Analyst
             </h3>
@@ -19,10 +37,10 @@ export const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground">
-              I enjoy solving problems, writing clean code, and turning data
-              into meaningful insights. Whether it’s building robust software or
-              exploring patterns in data, I love creating solutions that make an
-              impact.
+              I am passionate about leveraging data and technology to drive
+              innovation, continuously learning and adapting to build systems
+              that are not only functional but also intelligent and
+              future-ready.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -35,37 +53,51 @@ export const AboutSection = () => {
           <div className="grid grid-cols-1 gap-6">
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
-                </div>
+                {/* <div className="p-3 rounded-full bg-primary/10">
+                  <BriefcaseBusiness className="h-6 w-6 text-primary" />
+                </div> */}
+                <img
+                  src="/src/assets/Azend.png"
+                  alt="Azend Technologies Logo"
+                  className="h-12 w-12 rounded-full object-cover border border-gray-200"
+                />
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">
-                    Full-Stack Development
-                  </h4>
+                  <h4 className="font-semibold text-lg">Software Engineer</h4>
                   <p className="text-muted-foreground">
-                    Focused on delivering robust, efficient, and maintainable
-                    solutions using modern development practices.
+                    Azend Technologies (Pvt) Ltd
+                  </p>
+                  <p className="text-muted-foreground">Colombo, Sri Lanka</p>
+                  <p className="text-muted-foreground">
+                    April 2023 - February 2025
                   </p>
                 </div>
               </div>
             </div>
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <ChartSpline className="h-6 w-6 text-primary" />
-                </div>
+                {/* <div className="p-3 rounded-full bg-primary/10">
+                  <BriefcaseBusiness className="h-6 w-6 text-primary" />
+                </div> */}
+                <img
+                  src="/src/assets/arimac.png"
+                  alt="Azend Technologies Logo"
+                  className="h-12 w-12 rounded-full object-cover border border-gray-200"
+                />
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Data Science & Analysis
+                    Software Engineer - Intern
                   </h4>
                   <p className="text-muted-foreground">
-                    Skilled in uncovering meaningful trends and driving
-                    data-informed decision-making.
+                    Arimac Lanka (Pvt) Ltd
+                  </p>
+                  <p className="text-muted-foreground">Colombo, Sri Lanka</p>
+                  <p className="text-muted-foreground">
+                    January 2022 - July 2022
                   </p>
                 </div>
               </div>
             </div>
-            <div className="gradient-border p-6 card-hover">
+            {/* <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <BrainCircuit className="h-6 w-6 text-primary" />
@@ -80,7 +112,7 @@ export const AboutSection = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
