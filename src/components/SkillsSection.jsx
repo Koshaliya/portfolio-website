@@ -1,30 +1,36 @@
 import { useState } from "react";
 import { cn } from "../lib/utils";
+import tableau from "../assets/icons/tableau-software.svg";
+import looker from "../assets/icons/looker-icon.svg";
+import powerbi from "../assets/icons/power-bi-2021.png";
+import excel from "../assets/icons/888850.png";
+import aws from "../assets/icons/AWS_Simple_Icons_AWS_Cloud.svg.png";
+import cicd from "../assets/icons/ci-cd.png";
 
 const skills = [
   // === BUSINESS INTELLIGENCE & VISUALIZATION ===
   {
     name: "Looker",
     level: 85,
-    logo: "src/assets/icons/looker-icon.svg",
+    logo: looker,
     category: "Business Intelligence & Visualization",
   },
   {
     name: "Power BI (DAX, Power Query)",
     level: 90,
-    logo: "src/assets/icons/power-BI-2021.png",
+    logo: powerbi,
     category: "Business Intelligence & Visualization",
   },
   {
     name: "Tableau",
     level: 85,
-    logo: "src/assets/icons/tableau-software.svg",
+    logo: tableau,
     category: "Business Intelligence & Visualization",
   },
   {
     name: "Excel",
     level: 92,
-    logo: "src/assets/icons/888850.png",
+    logo: excel,
     category: "Business Intelligence & Visualization",
   },
   // {
@@ -206,7 +212,7 @@ const skills = [
   {
     name: "CI/CD Pipelines",
     level: 78,
-    logo: "src/assets/icons/ci-cd.png",
+    logo: cicd,
     category: "Cloud & CI/CD",
   },
   {
@@ -224,7 +230,7 @@ const skills = [
   {
     name: "AWS",
     level: 90,
-    logo: "src/assets/icons/AWS_Simple_Icons_AWS_Cloud.svg.png",
+    logo: aws,
     category: "Cloud & CI/CD",
   },
   {
