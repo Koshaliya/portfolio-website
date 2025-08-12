@@ -13,13 +13,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "Twitter Sentiment Analysis",
+    title: "Data Job Skills Dashboard ",
     description:
-      "The dataset is sourced from Kaggle, and the analysis involves preprocessing the text using Porter Stemmer, vectorizing the text using TF-IDF, and training a machine learning model to predict sentiment.",
+      "This dashboard was created for Job Seekers, Job Transitioners and Job Swappers to solve a common problem: info about the data job market is scattered and hard to grasp.",
     image: "/projects/",
-    tags: ["python"],
+    tags: ["powerbi", "dashboard"],
     demoUrl: "3",
-    githubUrl: "https://github.com/Koshaliya/twitter_sentiment_analysis",
+    githubUrl: "https://github.com/Koshaliya/job-data-dashboard-powerbi",
   },
   {
     id: 3,

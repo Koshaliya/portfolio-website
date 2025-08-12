@@ -8,6 +8,7 @@ import {
 import azendLogo from "../assets/Azend.png";
 import arimacLogo from "../assets/arimac.png";
 import profilePic from "../assets/profile.jpeg";
+import mcdonaldsLogo from "../assets/McDonalds.png";
 
 export const ExperienceSection = () => {
   return (
@@ -30,21 +31,20 @@ export const ExperienceSection = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-semibold">
-              Software Engineer | Data Analyst
+            <h3 className="text-2l font-semibold">
+              Data Scientist/Analyst | Software Engineer
             </h3>
             <p className="text-muted-foreground">
-              With over 2.5 years of experience building scalable web
-              applications and a strong foundation in data analysis, I combine
-              technical expertise with data-driven insights to create impactful
-              software solutions.
+              With 2.5+ years of experience in building scalable web
+              applications and a strong background in data analysis, I
+              specialize in turning complex data into actionable insights.
             </p>
 
             <p className="text-muted-foreground">
-              I am passionate about leveraging data and technology to drive
-              innovation, continuously learning and adapting to build systems
-              that are not only functional but also intelligent and
-              future-ready.
+              I thrive at the intersection of data science and real-world
+              problem solving, building insightful visualizations and
+              collaborating with teams to deliver intelligent, scalable
+              solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -55,6 +55,21 @@ export const ExperienceSection = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6">
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <img
+                  src={mcdonaldsLogo}
+                  alt="McDonald's"
+                  className="h-12 w-12 rounded-full object-cover border border-gray-200"
+                />
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Crew Member</h4>
+                  <p className="text-muted-foreground">McDonald's</p>
+                  <p className="text-muted-foreground">Sunderland, UK</p>
+                  <p className="text-muted-foreground">June 2025 - Present</p>
+                </div>
+              </div>
+            </div>
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 {/* <div className="p-3 rounded-full bg-primary/10">
