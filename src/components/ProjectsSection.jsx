@@ -1,35 +1,38 @@
 import { ArrowRight, Github } from "lucide-react";
+import TableauDashboard from "../assets/projects-ss/sales-dashboard-tableau.png";
+import DataJobDashboard from "../assets/projects-ss/data-job-dashboard.png";
+import BikeSalesDashboard from "../assets/projects-ss/bike-sales-dashboard.png";
 
 const projects = [
   {
     id: 1,
-    title: "Movie Recommendation System",
+    title: "Tableau Sales & Profit Dashboard",
     description:
-      "It recommends movies based on the similarity of their overviews and genres. The system uses the Bag of Words technique and Cosine Similarity to find similar movies.",
+      "Interactive dashboard analyzing sales, profit, and quantity trends across time, product categories, and locations. Enables dynamic filtering and comparison using intuitive visualizations including line charts (weekly trends), bar charts (category performance), and dual-axis insights.",
     image: "/projects/",
-    tags: ["python"],
-    demoUrl: "3",
-    githubUrl: "https://github.com/Koshaliya/movie-recommendation-system",
+    tags: ["tableau", "dashboard"],
+    image: TableauDashboard,
+    githubUrl: "https://github.com/Koshaliya/sales-dashboard-tableau",
   },
   {
     id: 2,
-    title: "Data Job Skills Dashboard ",
+    title: "Data Job Skills Dashboard with Power BI",
     description:
       "This dashboard was created for Job Seekers, Job Transitioners and Job Swappers to solve a common problem: info about the data job market is scattered and hard to grasp.",
     image: "/projects/",
     tags: ["powerbi", "dashboard"],
-    demoUrl: "3",
+    image: DataJobDashboard,
     githubUrl: "https://github.com/Koshaliya/job-data-dashboard-powerbi",
   },
   {
     id: 3,
-    title: "Currency Exchange Rate Prediction",
+    title: "E-bike Traders Dashboard with Power BI and MSSQL",
     description:
-      "This project focuses on building and evaluating machine learning models to predict currency exchange rates from GBP to EUR, HKD, USD, and JPY.",
+      "A Power BI dashboard connected to an MSSQL database to analyze key performance metrics for E-bike Traders. It supports informed decision-making, including recommendations on pricing adjustments for the upcoming year.",
     image: "/projects/",
-    tags: ["python"],
-    demoUrl: "3",
-    githubUrl: "https://github.com/Koshaliya/currency-rate-prediction",
+    tags: ["powerbi", "MSSQL"],
+    image: BikeSalesDashboard,
+    githubUrl: "https://github.com/Koshaliya/bike-sales-dashboard",
   },
 ];
 export const ProjectsSection = () => {
@@ -57,6 +60,14 @@ export const ProjectsSection = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div> */}
+              {/* Image Section */}
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
