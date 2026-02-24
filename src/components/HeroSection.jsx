@@ -19,10 +19,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I enjoy solving problems, writing clean code, and turning data into
-            meaningful insights. Whether it’s building robust software or
-            exploring patterns in data, I love creating solutions that make an
-            impact.
+            I enjoy analysing complex datasets, building predictive models and transforming raw data into actionable insights. Whether it’s uncovering hidden patterns or developing data-driven solutions, I’m passionate about creating measurable impact through analytics.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

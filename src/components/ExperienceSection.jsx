@@ -7,8 +7,8 @@ import {
 } from "lucide-react";
 import azendLogo from "../assets/Azend.png";
 import arimacLogo from "../assets/arimac.png";
-import profilePic from "../assets/profile.jpeg";
-import mcdonaldsLogo from "../assets/McDonalds.png";
+import profilePic from "../assets/profile2.jpeg";
+import essoLogo from "../assets/esso.svg";
 
 export const ExperienceSection = () => {
   return (
@@ -32,19 +32,14 @@ export const ExperienceSection = () => {
             </div>
 
             <h3 className="text-2l font-semibold">
-              Data Scientist/Analyst | Software Engineer
+              Data Scientist | Data Analyst
             </h3>
             <p className="text-muted-foreground">
-              With 2.5+ years of experience in building scalable web
-              applications and a strong background in data analysis, I
-              specialize in turning complex data into actionable insights.
+              With 2.5+ years of experience working with data-driven systems and a strong foundation in statistical analysis and machine learning, I specialise in extracting meaningful insights from complex data
             </p>
 
             <p className="text-muted-foreground">
-              I thrive at the intersection of data science and real-world
-              problem solving, building insightful visualizations and
-              collaborating with teams to deliver intelligent, scalable
-              solutions.
+              I thrive at the intersection of data science and business decision-making, building predictive models and insightful visualisations while collaborating with teams to deliver intelligent, scalable, data-centric solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -58,14 +53,14 @@ export const ExperienceSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <img
-                  src={mcdonaldsLogo}
+                  src={essoLogo}
                   alt="McDonald's"
                   className="h-12 w-12 rounded-full object-cover border border-gray-200"
                 />
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Crew Member</h4>
-                  <p className="text-muted-foreground">McDonald's</p>
-                  <p className="text-muted-foreground">Sunderland, UK</p>
+                  <h4 className="font-semibold text-lg">Retail Data & Operations Assistant</h4>
+                  <p className="text-muted-foreground">Esso Service Station</p>
+                  <p className="text-muted-foreground">Remote, UK</p>
                   <p className="text-muted-foreground">June 2025 - Present</p>
                 </div>
               </div>
